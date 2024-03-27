@@ -1,0 +1,207 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up basic styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #fff; /* Set text color to white */
+  /* background-image: url(./workout.jpg);*/
+  background-image: url("https://img.freepik.com/free-photo/abstract-blur-fitness-gym-room_74190-4569.jpg?w=900&t=st=1711305426~exp=1711306026~hmac=3ab3873574015b4253f5786fe6ad47649ca10888e2edbaf10840d56b47eda509");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  background-size: cover; /* Cover the entire background */
+  background-position: center;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  height: 50px;
+  box-shadow: #f2f2f2;
+}
+
+nav {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  width: 90px;
+  margin: -15px 4px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 15px;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  padding: 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: black; /* Set text color to white */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: black; /* Set text color to white */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #555;
+}
+
+.about-content h2,
+.services-content h2,
+.contact-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black; /* Set text color to white */
+}
+
+.about-content p,
+.contact-content p {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+.services-content {
+  color: #fff; /* Set text color to white */
+  text-align: center;
+  padding: 20px;
+}
+
+.services-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black; /* Set text color to white */
+}
+
+.services-content ul {
+  /*list-style: disc;*/
+  margin-left: 20px;
+  font-size: 16px;
+  color: black; /* Set text color to white */
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  color: black; /* Set text color to white */
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin-left: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    color: white;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+.services-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-item {
+  margin: 10px;
+  width: 200px;
+}
+
+.service-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
